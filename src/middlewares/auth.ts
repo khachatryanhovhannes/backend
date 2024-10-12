@@ -4,6 +4,7 @@ import { ErrorCode } from "../exceptions/root";
 import { prismaClient } from "../prismaClient";
 import { verifyToken } from "../helpers/tokens";
 import { InvalidTokenException } from "../exceptions/invalid-token";
+import { omit } from "lodash";
 
 const authMiddleware = async (
   req: Request,
@@ -35,10 +36,7 @@ const authMiddleware = async (
       typeof payload === "string"
     ) {
       return next(
-        new InvalidTokenException(
-          "Invalid token",
-          ErrorCode.INVALID_TOKEN
-        )
+        new InvalidTokenException("Invalid token", ErrorCode.INVALID_TOKEN)
       );
     }
 
@@ -46,6 +44,7 @@ const authMiddleware = async (
       where: {
         email: payload.email,
       },
+      include: { roles: true },
     });
 
     if (!user) {
@@ -54,9 +53,8 @@ const authMiddleware = async (
       );
     }
 
-    user.password = "";
-
-    req.user = user;
+    req.user = omit(user, ["password", "refreshToken"]);
+    req.roles = user.roles;
 
     next();
   } catch {

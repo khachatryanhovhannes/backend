@@ -4,7 +4,7 @@ import { BadRequestsException } from "../exceptions/bad-requests";
 import { ErrorCode } from "../exceptions/root";
 import { UnprocessableEntity } from "../exceptions/validation";
 import { ZodError, ZodIssue } from "zod";
-import { RegisterSchema } from "../schema/user.schema";
+import { LoginSchema, RegisterSchema } from "../schema/user.schema";
 import { comparePasswordHash, generatePasswordHash } from "../utils/password";
 import {
   generateAccessToken,
@@ -18,36 +18,55 @@ export const login = async (
   res: Response,
   next: NextFunction
 ) => {
-  const { email, password } = req.body;
+  try {
+    LoginSchema.parse(req.body);
+    const { email, password } = req.body;
 
-  const user = await prismaClient.user.findFirst({
-    where: { email },
-  });
+    const user = await prismaClient.user.findFirst({
+      where: { email },
+    });
 
-  if (
-    !user ||
-    !user.password ||
-    (await comparePasswordHash(password, user.password))
-  ) {
-    return next(
-      new BadRequestsException(
-        "Invalid username or password",
-        ErrorCode.INVALID_CREDENTIALS
-      )
-    );
+    if (
+      !user ||
+      !user.password ||
+      (await comparePasswordHash(password, user.password))
+    ) {
+      return next(
+        new BadRequestsException(
+          "Invalid username or password",
+          ErrorCode.INVALID_CREDENTIALS
+        )
+      );
+    }
+
+    const tokens = {
+      accessToken: await generateAccessToken(user),
+      refreshToken: await generateRefreshToken(user),
+    };
+
+    await prismaClient.user.update({
+      where: { id: user.id },
+      data: { refreshToken: tokens.refreshToken },
+    });
+
+    res.status(200).json(tokens);
+  } catch (err) {
+    if (err instanceof ZodError) {
+      const errorMessages: string[] = err.errors.map(
+        (issue: ZodIssue) => issue.message
+      );
+
+      next(
+        new UnprocessableEntity(
+          errorMessages,
+          "Unprocessable entity",
+          ErrorCode.UNPROCESSABLE_ENTITY
+        )
+      );
+    } else {
+      next(err);
+    }
   }
-
-  const tokens = {
-    accessToken: await generateAccessToken(user),
-    refreshToken: await generateRefreshToken(user),
-  };
-
-  await prismaClient.user.update({
-    where: { id: user.id },
-    data: { refreshToken: tokens.refreshToken },
-  });
-
-  res.status(200).json(tokens);
 };
 
 export const register = async (
