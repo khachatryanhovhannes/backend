@@ -92,12 +92,21 @@ export const register = async (
     }
     const hashedPassword = await generatePasswordHash(password);
 
+    const defaultRole = await prismaClient.role.findUnique({
+      where: { name: "User" },
+    });
+
     const user = await prismaClient.user.create({
       data: {
         name: name,
         email,
         password: hashedPassword,
       },
+    });
+
+    await prismaClient.role.update({
+      where: { id: defaultRole?.id || 0 },
+      data: { users: { connect: { id: user.id } } },
     });
 
     const userWithoutPassword = Object.fromEntries(

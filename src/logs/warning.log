@@ -1,0 +1,452 @@
+{
+  level: 'warn',
+  message: 'HTTP DELETE /api/v1/user/2',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/user/2',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJtaXNoYUBnbWFpbC5jb20iLCJpYXQiOjE3Mjg3NDEwMDMsImV4cCI6MTcyODc0MTkwM30.pY_p0RRIwDb_gP2WOcCHBGfdZl5j02cPRhGaHZqgCCA',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '0038d4d6-5058-4628-9ce1-afd48005325c',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'DELETE',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/user/2',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 4
+    },
+    timestamp: '2024-10-14T10:55:55.397Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/upload',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/upload',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJtaXNoYUBnbWFpbC5jb20iLCJpYXQiOjE3Mjg5MDMzNzQsImV4cCI6MTcyODkwNDI3NH0.2CMmQa8HN9XCMIV9oGFwWrm3fZuVu-2EmGtHR00yfqs',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '83134ae6-a5db-4429-bc32-764afc09230a',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '0'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/upload',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 11
+    },
+    timestamp: '2024-10-14T10:57:34.626Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/register',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '93542210-53ca-4a4d-b46c-ff97e09ff37d',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '82'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/register',
+        query: {}
+      },
+      res: { statusCode: 422 },
+      responseTime: 7
+    },
+    timestamp: '2024-10-14T11:02:17.230Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/register',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': 'df4c158f-39b0-4f99-a109-32472a912e77',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '82'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/register',
+        query: {}
+      },
+      res: { statusCode: 422 },
+      responseTime: 1
+    },
+    timestamp: '2024-10-14T11:02:45.843Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP DELETE /api/v1/user/2',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/user/2',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJob3ZrQGdtYWlsLmNvbSIsImlhdCI6MTcyODkwMzgwMiwiZXhwIjoxNzI4OTA0NzAyfQ.NQwMOof5fYIB-NrsKa0exqx0e5ThIFyvHxNAdcEOY1s',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '23a89769-ea31-479d-b37f-51aa3bc43043',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive'
+        },
+        method: 'DELETE',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/user/2',
+        query: {}
+      },
+      res: { statusCode: 403 },
+      responseTime: 9
+    },
+    timestamp: '2024-10-14T11:04:03.778Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/register',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '71631cc0-77f3-483a-9999-02b17a130bd9',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '86'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/register',
+        query: {}
+      },
+      res: { statusCode: 422 },
+      responseTime: 8
+    },
+    timestamp: '2024-10-14T11:05:21.863Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/register',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '05493088-8242-4e62-95af-ef6fa217a06e',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '85'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/register',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 28
+    },
+    timestamp: '2024-10-14T11:06:13.822Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/register',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '2b25c44d-84f5-403b-99f4-fd1cff7c4098',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '89'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/register',
+        query: {}
+      },
+      res: { statusCode: 422 },
+      responseTime: 4
+    },
+    timestamp: '2024-10-14T11:20:14.737Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/register',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '53e68664-78e7-48ef-bba3-2f72e44b1a8b',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '83'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/register',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 27
+    },
+    timestamp: '2024-10-14T11:22:36.495Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/auth/register',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/auth/register',
+        headers: {
+          'content-type': 'application/json',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '6dc2e759-3506-497f-89f9-10dcdab89109',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-length': '79'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/auth/register',
+        query: {}
+      },
+      res: { statusCode: 422 },
+      responseTime: 3
+    },
+    timestamp: '2024-10-14T11:33:51.520Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP POST /api/v1/upload',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/upload',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksImVtYWlsIjoiaG92a0BnbWFpbC5jb20iLCJpYXQiOjE3Mjg5MDU4OTcsImV4cCI6MTcyODkwNjc5N30.KL0Va6vbvD7uWXXbHCuS7RAmKURIFPPnMOl1hkxRRHU',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '1a2be1a8-b194-4335-97e3-de6a009b0519',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------287723369398079431348987',
+          'content-length': '59266'
+        },
+        method: 'POST',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/upload',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 5
+    },
+    timestamp: '2024-10-14T12:00:26.988Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP DELETE /api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksImVtYWlsIjoiaG92a0BnbWFpbC5jb20iLCJpYXQiOjE3Mjg5MDcyMzIsImV4cCI6MTcyODkwODEzMn0.rY-B4D1HeNCVVl35Y_8gv6CTPNhg8TU306sXfvc8kQ4',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '5a3a4b55-c84b-4be6-930a-e34cc7ff7442',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------568486884492543689810154',
+          'content-length': '54827'
+        },
+        method: 'DELETE',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+        query: {}
+      },
+      res: { statusCode: 404 },
+      responseTime: 6
+    },
+    timestamp: '2024-10-14T12:14:10.334Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP DELETE /api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksImVtYWlsIjoiaG92a0BnbWFpbC5jb20iLCJpYXQiOjE3Mjg5MDcyMzIsImV4cCI6MTcyODkwODEzMn0.rY-B4D1HeNCVVl35Y_8gv6CTPNhg8TU306sXfvc8kQ4',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '5b035576-fc0a-4eb6-8eb1-7993b2927639',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------109154297979875332379148',
+          'content-length': '54827'
+        },
+        method: 'DELETE',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 10
+    },
+    timestamp: '2024-10-14T12:16:41.739Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP DELETE /api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksImVtYWlsIjoiaG92a0BnbWFpbC5jb20iLCJpYXQiOjE3Mjg5MDgyMTYsImV4cCI6MTcyODkwOTExNn0.xJkNeCV2PlG_OelS2FHhV8jU_jqoYwdfyLgy7i_LaCI',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '534792da-5c0a-46cb-8a22-696b4114131d',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------777069725783118250916722',
+          'content-length': '54827'
+        },
+        method: 'DELETE',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 15
+    },
+    timestamp: '2024-10-14T12:17:21.478Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP DELETE /api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksImVtYWlsIjoiaG92a0BnbWFpbC5jb20iLCJpYXQiOjE3Mjg5MDgyMTYsImV4cCI6MTcyODkwOTExNn0.xJkNeCV2PlG_OelS2FHhV8jU_jqoYwdfyLgy7i_LaCI',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '97af752c-2c17-4166-b1bc-e70dab33cd1d',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------984064153166826824523683',
+          'content-length': '54827'
+        },
+        method: 'DELETE',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 22
+    },
+    timestamp: '2024-10-14T12:18:40.913Z'
+  }
+}
+{
+  level: 'warn',
+  message: 'HTTP DELETE /api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+  metadata: {
+    meta: {
+      req: {
+        url: '/api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+        headers: {
+          authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksImVtYWlsIjoiaG92a0BnbWFpbC5jb20iLCJpYXQiOjE3Mjg5MDgyMTYsImV4cCI6MTcyODkwOTExNn0.xJkNeCV2PlG_OelS2FHhV8jU_jqoYwdfyLgy7i_LaCI',
+          'user-agent': 'PostmanRuntime/7.42.0',
+          accept: '*/*',
+          'postman-token': '17fccb8e-40f4-480f-99e2-f7e6dfa3cab5',
+          host: 'localhost:3000',
+          'accept-encoding': 'gzip, deflate, br',
+          connection: 'keep-alive',
+          'content-type': 'multipart/form-data; boundary=--------------------------683226533140496583533345',
+          'content-length': '54827'
+        },
+        method: 'DELETE',
+        httpVersion: '1.1',
+        originalUrl: '/api/v1/upload/2fdc266c006f7a19fa795b6bf33bc239',
+        query: {}
+      },
+      res: { statusCode: 400 },
+      responseTime: 34
+    },
+    timestamp: '2024-10-14T12:18:55.903Z'
+  }
+}

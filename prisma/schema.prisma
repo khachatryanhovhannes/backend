@@ -1,5 +1,6 @@
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
+  previewFeatures = ["relationJoins"]
 }
 
 datasource db {
@@ -19,8 +20,7 @@ model User {
 
   refreshToken String?
 
-  roles  Role[] @relation("UserRoles")
-
+  roles      Role[]       @relation("UserRoles")
   @@map("users")
 }
 
@@ -30,7 +30,7 @@ model Role {
   name String @unique
   code String @unique
 
-  users User[] @relation("UserRoles")
+  users      User[]       @relation("UserRoles")
 
   @@map("roles")
 }
